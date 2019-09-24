@@ -1,0 +1,1 @@
+energia=@(G,LimiteMenor,LimiteMayor) integral (G,LimiteMenor,LimiteMayor);

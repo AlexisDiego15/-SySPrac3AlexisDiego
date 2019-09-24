@@ -205,7 +205,7 @@ axis([-7 7 -1 5]);
 </pre><img vspace="5" hspace="5" src="SySPrac3AlexisDiego_14.png" alt=""> <pre class="codeinput">plot(t,x(-t+2));
 title(<span class="string">'e. x(2-t)'</span>);
 axis([-7 7 -1 5]);
-</pre><img vspace="5" hspace="5" src="SySPrac3AlexisDiego_15.png" alt=""> <h2 id="48">Problema 6</h2><div><ol><li>Escriba una funci&oacute;n que se llame <i>energia</i> que reciba como argumento una funci&oacute;n (anonima o simbolica) y que regrese el calculo de la energ&iacute;a, para esto puede resultar &uacute;til investigar las instrucciones <i>int</i> , <i>integral</i> Se presupone utilizar el c&oacute;digo solo con funciones de energia. Muestre el c&oacute;digo sin ejecutar, y posteriormente resuelva el problema 1.1.3</li></ol></div><p>1.1.3 a. Encuentra la energia del par de se&ntilde;ales x(t) y y(t). Bosqueja y encuentra la energia de las se&ntilde;ales x(t)+y(t) y x(t)-y(t).</p><p><img vspace="5" hspace="5" src="113pro.PNG" alt=""> </p><pre class="codeinput">clf;
+</pre><img vspace="5" hspace="5" src="SySPrac3AlexisDiego_15.png" alt=""> <h2 id="48">Problema 6</h2><div><ol><li>Escriba una funci&oacute;n que se llame <i>energia</i> que reciba como argumento una funci&oacute;n (anonima o simbolica) y que regrese el calculo de la energ&iacute;a, para esto puede resultar &uacute;til investigar las instrucciones <i>int</i> , <i>integral</i> Se presupone utilizar el c&oacute;digo solo con funciones de energia. Muestre el c&oacute;digo sin ejecutar, y posteriormente resuelva el problema 1.1.3</li></ol></div><p>1.1.3 a. Encuentra la energia del par de se&ntilde;ales x(t) y y(t). Bosqueja y encuentra la energia de las se&ntilde;ales x(t)+y(t) y x(t)-y(t).</p><p><img vspace="5" hspace="5" src="113pro.png" alt=""> </p><pre class="codeinput">clf;
 ener=@(G,LimiteMenor,LimiteMayor) integral (G,LimiteMenor,LimiteMayor);
 x=@(t)(abs(1).^2).*(t&gt;0).*(t&lt;=2);
 y=@(t)(abs(1).^2).*(t&gt;0).*(t&lt;=1)+(abs(-1).^2).*(t&gt;1).*(t&lt;=2);
@@ -285,7 +285,7 @@ ans =
 
    -1.5708
 
-</pre><h2 id="66">Problema 7</h2><div><ol><li>Escriba una funci&oacute;n que se llame <i>potencia</i> que reciba como argumento una funci&oacute;n (anonima o simbolica) y que regrese el calculo de la potencia para esto puede resultar &uacute;til investigar las instrucciones <i>int</i> , <i>integral</i> Se presupone utilizar el c&oacute;digo solo con funciones de potencia. Muestre el c&oacute;digo sin ejecutar, y posteriormente resuelva el problema 1.1.4</li></ol></div><p>Encuentra la potencia de la se&ntilde;al periodica x(t). Tambien encuentra las potencias y los valores RMS de:</p><div><ul><li>a. -x(t)</li><li>b. 2x(t)</li><li>c. cx(t)</li></ul></div><p><img vspace="5" hspace="5" src="114pro.PNG" alt=""> </p><h2 id="70">Referencias</h2><p>B. P. Lathi, Linear Systems and Signals, Second Edition, Oxford.</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
+</pre><h2 id="66">Problema 7</h2><div><ol><li>Escriba una funci&oacute;n que se llame <i>potencia</i> que reciba como argumento una funci&oacute;n (anonima o simbolica) y que regrese el calculo de la potencia para esto puede resultar &uacute;til investigar las instrucciones <i>int</i> , <i>integral</i> Se presupone utilizar el c&oacute;digo solo con funciones de potencia. Muestre el c&oacute;digo sin ejecutar, y posteriormente resuelva el problema 1.1.4</li></ol></div><p>Encuentra la potencia de la se&ntilde;al periodica x(t). Tambien encuentra las potencias y los valores RMS de:</p><div><ul><li>a. -x(t)</li><li>b. 2x(t)</li><li>c. cx(t)</li></ul></div><p><img vspace="5" hspace="5" src="114pro.png" alt=""> </p><h2 id="70">Referencias</h2><p>B. P. Lathi, Linear Systems and Signals, Second Edition, Oxford.</p><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2017b</a><br></p></div><!--
 ##### SOURCE BEGIN #####
 %% Práctica 3: Señales continuas
 %% Integrantes
@@ -561,7 +561,7 @@ axis([-7 7 -1 5]);
 % encuentra la energia de las señales x(t)+y(t) y x(t)-y(t).
 %%
 % 
-% <<113pro.PNG>>
+% <<113pro.png>>
 % 
 %%
 clf;
@@ -625,7 +625,7 @@ ener(x,0,1*pi)-ener(y,0,1*pi)
 % * c. cx(t)
 %%
 % 
-% <<114pro.PNG>>
+% <<114pro.png>>
 % 
 %% Referencias
 % B. P. Lathi, Linear Systems and Signals, Second Edition, Oxford.
